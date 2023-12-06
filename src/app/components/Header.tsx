@@ -5,6 +5,7 @@ import {
   NavbarItem,
 } from "@nextui-org/react";
 import IconLink from "./IconLink";
+import Link from 'next/link';
 import {
   HomeIcon,
   MapIcon,
