@@ -40,7 +40,7 @@ const Header = () => (
   <Navbar maxWidth="full" position="sticky">
     <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
       <NavbarBrand>
-        <span className="font-bold text-3xl">Clean & Green Philly</span>
+        <span className="font-bold text-3xl text-green-600">Clean & Green Philly</span>
         <span className="text-sm text-gray-600 ml-4">
           Clean and green vacant properties
           <br /> to reduce gun crime.

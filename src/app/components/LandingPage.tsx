@@ -26,11 +26,17 @@ const images = [
 ];
 
 const LandingPage = () => (
-  <div className="container mx-auto pt-20">
+  <div className="container flex flex-col mx-auto pt-20">
     <div className="text-left text-2xl my-10">
-      Research has shown that cleaning and greening vacant properties can reduce
-      gun violence by as much as 29%. This website can help you identify the properties where you can have the biggest impact.
+      <p className="default"><span className="font-bold">Cleaning and greening vacant properties can reduce gun violence  <br /> as much as 29%.</span> This tool can empower anyone to find properties that would <br />  make a significant impact in philadelphia and take action.</p>
     </div>
+    <dl className="flex relative">
+      <div className="text-right absolute bottom-0 right-0 ">
+        <dd className=" gap-10"><span className="font-bold">Search</span> by address to find lots in your <br />neighborhood.</dd>
+         <dd className=" gap-10"><span className="font-bold">Filter</span> by neighborhood, gun crime rate, <br /> tree canopy,and many other criteria.</dd>
+         <dd className="gap-10"><span className="font-bold">Download</span> this data to analyze in other <br /> tools like Excel.</dd>
+      </div>
+    </dl>
     <div className="flex justify-between space-x-2.5">
       {images.map(({ src, alt, captionTitle, captionBody }) => (
         <LandingPageImage

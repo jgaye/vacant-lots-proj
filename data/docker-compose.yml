@@ -7,4 +7,5 @@ services:
       - VACANT_LOTS_DB
       - VACANT_LOTS_DB_REMOTE
     volumes:
-      - ./src:/usr/src/app
+      - /Users/josephani/Documents/vacant-lots-proj/data/src:/usr/src/app
+      
