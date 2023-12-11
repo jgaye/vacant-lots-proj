@@ -26,15 +26,15 @@ const images = [
 ];
 
 const LandingPage = () => (
-  <div className="container flex flex-col mx-auto pt-20">
-    <div className="text-left text-2xl my-10">
-      <p className="default"><span className="font-bold">Cleaning and greening vacant properties can reduce gun violence  <br /> as much as 29%.</span> This tool can empower anyone to find properties that would <br />  make a significant impact in philadelphia and take action.</p>
+  <div className="container flex flex-col mx-auto pt-10">
+    <div className="text-left sm:text-3xl my-10">
+      <p className="default"><span className="font-bold">Cleaning and greening vacant properties can reduce <br /> gun violence as much as 29%.</span> This tool can empower<br />anyone to find properties that would make a significant<br/>impact in philadelphia and take action.</p>
     </div>
-    <dl className="flex relative">
-      <div className="text-right absolute bottom-0 right-0 ">
-        <dd className=" gap-10"><span className="font-bold">Search</span> by address to find lots in your <br />neighborhood.</dd>
-         <dd className=" gap-10"><span className="font-bold">Filter</span> by neighborhood, gun crime rate, <br /> tree canopy,and many other criteria.</dd>
-         <dd className="gap-10"><span className="font-bold">Download</span> this data to analyze in other <br /> tools like Excel.</dd>
+    <dl className="flex flex-col w-full relative bottom-8">
+      <div className="text-right md:absolute bottom-0 right-0">
+        <dd className=""><span className="font-bold">Search</span> by address to find lots in your <br />neighborhood.</dd>
+         <dd className=""><span className="font-bold">Filter</span> by neighborhood, gun crime rate, <br /> tree canopy,and many other criteria.</dd>
+         <dd className=""><span className="font-bold">Download</span> this data to analyze in other <br /> tools like Excel.</dd>
       </div>
     </dl>
     <div className="flex justify-between space-x-2.5">
