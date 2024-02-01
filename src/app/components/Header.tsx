@@ -16,6 +16,7 @@ import {
   MapPinIcon,
   InformationCircleIcon,
   HandRaisedIcon,
+  MapIcon,
 } from "@heroicons/react/20/solid";
 
 const navbarButtons = [
