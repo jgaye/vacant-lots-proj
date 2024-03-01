@@ -37,10 +37,20 @@ const PropertyCard = ({ feature, setSelectedProperty }: PropertyCardProps) => {
   const formattedAddress = toTitleCase(address);
   const priorityClass = getPriorityClass(priority_level);
 
+  const handleClick = () => setSelectedProperty(feature)
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === 'Space') {
+      handleClick()
+    }
+  }
+
   return (
     <div
       className="max-w-sm w-full md:w-1/2 p-2 cursor-pointer"
-      onClick={() => setSelectedProperty(feature)}
+      onClick={handleClick}
+      onKeyDown={handleKeyDown}
+      tabIndex={0}
     >
       <div className="max-w-sm w-full p-4">
         <div className="bg-white rounded-md overflow-hidden">
